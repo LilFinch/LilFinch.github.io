@@ -16,6 +16,7 @@
     
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
     
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
    <!-- <script>
@@ -29,7 +30,7 @@
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
     <script src="assets/js/Chart.js"></script>
-
+<script src="assets/js/social.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
@@ -85,7 +86,7 @@
 					<p>I'm a mechanical engineer, roboticist & self-taught developer with passion towards aircrafts, robots and artificial intelligence. I'm interested in all kinds of robotic systems, but my major focus is on the dynamics and kinematics of SMG robots. I also have skills in other fields like finite element methods and computational mechanics.</p>
 				</div>
 				<div class="col-lg-3">
-					<p><a href="assets/img/CV.pdf" target="_blank"><i class="icon-file"></i></a> <sm>DOWNLOAD PDF</sm></p>
+					<p><a href="assets/img/CV.pdf" target="_blank"><i class="icon-file"></i> <sm>DOWNLOAD PDF</sm></a></p>
 				</div>
 				
 			</div><!--/.row -->
@@ -99,7 +100,7 @@
 		<div class="row">
 
 				<div class="col-lg-2 col-lg-offset-1">
-					<h5>EDUCATION</h5>
+					<h4>EDUCATION</h4>
 				</div>
 				<div class="col-lg-6">
 					<p><t>Bachelor in Honors Mechanical Engineering (Internship Program)</t><br/>
@@ -135,7 +136,7 @@
 		<div class="row">
 
 				<div class="col-lg-2 col-lg-offset-1">
-					<h5>WORK/EXPERIENCE</h5>
+					<h4>WORK/EXPERIENCE</h4>
 				</div>
 				<div class="col-lg-6">
 					<p><t>R&D Engineer</t><br/>
@@ -233,10 +234,10 @@
 	<div id="skillswrap">
 		<div class="container">
 			<div class="row">
-					<div class="col-lg-2 col-lg-offset-1">
+					<div class="col-sm-2 col-sm-offset-1">
 						<h5>SKILLS</h5>
 					</div>
-					<div class="col-lg-3 centered">
+					<div class="col-sm-3 centered">
 						<canvas id="javascript" height="130" width="130"></canvas>
 						<p>MS-Office</p>
 						<br>
@@ -254,27 +255,9 @@
 								var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-					<div class="col-lg-3 centered">
+					<div class="col-sm-3 centered">
 						<canvas id="bootstrap" height="130" width="130"></canvas>
 						<p>LaTex</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 95,
-										color:"#1abc9c"
-									},
-									{
-										value : 5,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					<div class="col-lg-3 centered">
-						<canvas id="wordpress" height="130" width="130"></canvas>
-						<p>HTML/CSS</p>
 						<br>
 						<script>
 							var doughnutData = [
@@ -284,6 +267,24 @@
 									},
 									{
 										value : 10,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-sm-3 centered">
+						<canvas id="wordpress" height="130" width="130"></canvas>
+						<p>HTML/CSS</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 80,
+										color:"#1abc9c"
+									},
+									{
+										value : 20,
 										color : "#ecf0f1"
 									}
 								];
@@ -291,27 +292,9 @@
 						</script>
 					</div>
 					
-					<div class="col-lg-3 col-lg-offset-3 centered">
+					<div class="col-sm-3 col-sm-offset-3 centered">
 						<canvas id="html" height="130" width="130"></canvas>
 						<p>MATLAB/SIMULINK</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 95,
-										color:"#1abc9c"
-									},
-									{
-										value : 5,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					<div class="col-lg-3 centered">
-						<canvas id="photoshop" height="130" width="130"></canvas>
-						<p>Mathematica/Maple</p>
 						<br>
 						<script>
 							var doughnutData = [
@@ -324,10 +307,28 @@
 										color : "#ecf0f1"
 									}
 								];
+								var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-sm-3 centered">
+						<canvas id="photoshop" height="130" width="130"></canvas>
+						<p>Mathematica/Maple</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 80,
+										color:"#1abc9c"
+									},
+									{
+										value : 20,
+										color : "#ecf0f1"
+									}
+								];
 								var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-					<div class="col-lg-3 centered">
+					<div class="col-sm-3 centered">
 						<canvas id="py" height="130" width="130"></canvas>
 						<p>Python</p>
 						<br>
@@ -346,27 +347,83 @@
 						</script>
 					</div>
 					
-					<div class="col-lg-3 col-lg-offset-3 centered">
+					<div class="col-sm-3 col-sm-offset-3 centered">
 						<canvas id="sw" height="130" width="130"></canvas>
 						<p>Solidworks/Catia</p>
 						<br>
 						<script>
 							var doughnutData = [
 									{
-										value: 95,
+										value: 90,
 										color:"#1abc9c"
 									},
 									{
-										value : 5,
+										value : 10,
 										color : "#ecf0f1"
 									}
 								];
 								var myDoughnut = new Chart(document.getElementById("sw").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-					<div class="col-lg-3 centered">
+					<div class="col-sm-3 centered">
 						<canvas id="inv" height="130" width="130"></canvas>
 						<p>Inventor/AutoCad</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 75,
+										color:"#1abc9c"
+									},
+									{
+										value : 25,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("inv").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-sm-3 centered">
+						<canvas id="ansys" height="130" width="130"></canvas>
+						<p>Ansys</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 70,
+										color:"#1abc9c"
+									},
+									{
+										value : 30,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("ansys").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					
+					
+					<div class="col-sm-3 col-sm-offset-3 centered">
+						<canvas id="ard" height="130" width="130"></canvas>
+					<p>Arduino</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 90,
+										color:"#1abc9c"
+									},
+									{
+										value : 10,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("ard").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-sm-3 centered">
+						<canvas id="proc" height="130" width="130"></canvas>
+						<p>Processing</p>
 						<br>
 						<script>
 							var doughnutData = [
@@ -379,66 +436,10 @@
 										color : "#ecf0f1"
 									}
 								];
-								var myDoughnut = new Chart(document.getElementById("inv").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					<div class="col-lg-3 centered">
-						<canvas id="ansys" height="130" width="130"></canvas>
-						<p>Ansys</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 90,
-										color:"#1abc9c"
-									},
-									{
-										value : 10,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("ansys").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					
-					
-					<div class="col-lg-3 col-lg-offset-3 centered">
-						<canvas id="ard" height="130" width="130"></canvas>
-					<p>Arduino</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 95,
-										color:"#1abc9c"
-									},
-									{
-										value : 5,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("ard").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					<div class="col-lg-3 centered">
-						<canvas id="proc" height="130" width="130"></canvas>
-						<p>Processing</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 90,
-										color:"#1abc9c"
-									},
-									{
-										value : 10,
-										color : "#ecf0f1"
-									}
-								];
 								var myDoughnut = new Chart(document.getElementById("proc").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-					<div class="col-lg-3 centered">
+					<div class="col-sm-3 centered">
 						<canvas id="C/C++" height="130" width="130"></canvas>
 						<p>C/C++</p>
 						<br>
@@ -463,46 +464,40 @@
 	</div><!--/ #skillswrap -->
 
 
-<!--
-	<section id="work" name="work"></section>
+
+	<!--<section id="work" name="work"></section>-->
 	<!--PORTFOLIO DESCRIPTION -->
-<!--	<div class="container desc">
+	<div class="container desc">
 		<div class="row">
 				<div class="col-lg-2 col-lg-offset-1">
-					<h5>PORTFOLIO</h5>
+					<h4>PORTFOLIO</h4>
 				</div>
 				<div class="col-lg-6">
-					<p><img class="img-responsive" src="assets/img/port01.jpg" alt=""></p>
+					<p><img class="img-responsive" src="assets/img/Test_Yellow.PNG" alt=""></p>
 				</div>
 				<div class="col-lg-3">
-					<p>CANALS OF ENGLAND</p>
-				<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/>
-					<sm><i class="icon-tag"></i> design</sm></more> 
+					<p>OpenCV for Arduino</p>
+				<p><more>A framework for linking OpenCV to Arduino boards, highlights object Tracking using OpenCV for processing and Arduino Firmata <br/><br/>
+					<a href="https://github.com/LilFinch/OpenCV-Tracking-Processing-UI" class="btn btn-block btn-social btn-github">
+        <i class="fa fa-github" aria-hidden="true"></i> Source Code
+      </a>
+					<p><i class="icon-tag"></i>Computer Vision</p></more> 
 				</p>
 				</div>
 	
 				<div class="col-lg-6 col-lg-offset-3">
-					<p><img class="img-responsive" src="assets/img/port02.jpg" alt=""></p>
+					<p><img class="img-responsive" src="assets/img/final_design.png" alt=""></p>
 				</div>
 				<div class="col-lg-3">
-						<p>SANKEY</p>
-					<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/>
-						<sm><i class="icon-tag"></i> front-end</sm></more> 
+						<p>Dynamics Model of an SMG Robot</p>
+					<p><more>The forward and inverse dynamics of a pick and place SMG robot designed by the Robotic Mechanical
+Systems Lab at McGill university were studied and simulated in this thesis.<br/><br/>
+<a href="assets/img/Thesis.pdf" target="_blank" class="btn btn-default"><span class="glyphicon glyphicon-save"></span> Download PDF</a>
+
+						<p><i class="icon-tag"></i>Robotics</p></more> 
 					</p>
 				</div>
-				
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><img class="img-responsive" src="assets/img/port03.jpg" alt=""></p>
-				</div>
-				<div class="col-lg-3">
-						<p>WE GROW</p>
-					<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/>
-						<sm><i class="icon-tag"></i> web design</sm></more> 
-					</p>
-				</div>
-		
-		</div><!--/.row -->
-<!--		<br>
+		<br>
 		<br>
 	</div><!--/.container -->
 	
